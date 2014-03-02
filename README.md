@@ -16,4 +16,4 @@ The port 8888 is setup to forward the output of the Datastax Opscenter to the ho
 
 More information on Opscenter is available at:
 
-[http://www.datastax.com/documentation/getting_started/doc/getting_started/gsSetupOpscC.html?scroll=gsSetUpOPSC__step1](Setting Up Opscenter) 
+[Setting Up Opscenter](http://www.datastax.com/documentation/getting_started/doc/getting_started/gsSetupOpscC.html?scroll=gsSetUpOPSC__step1)
