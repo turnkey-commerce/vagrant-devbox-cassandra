@@ -1,19 +1,29 @@
 vagrant-devbox-cassandra
 ========================
 
-Vagrant setup to quickly provision a Cassandra dev environment.  It is relatively simple
-as it employs a bash script to provision the Java 7 dependencies.
+Vagrant setup to quickly provision a Cassandra dev environment in Ubuntu Precise 64.  It is relatively simple
+in that it employs a bash script to provision the Java 7 dependencies and Cassandra/OpsCenter from the Datastax Community.
 
-To use it Vagrant and Virtual Box should be installed on the host machine.
+Prerequisites
+-------------
+Vagrant and Virtual Box must be installed on the host machine.
 
-Then clone the repository and enter the command:
+Usage
+-----
 
->vagrant up
+    git clone git://github.com/turnkey-commerce/vagrant-devbox-cassandra.git
+    cd vagrant-devbox-cassandra
+    vagrant up
 
-The port 8888 is setup to forward the output of the Datastax Opscenter to the host web browser:
+Verify Installation
+--------------------
+	vagrant ssh
+	$ nodetool status
 
->http://localhost:8888
+Port 8888 is set up to forward the output of the Datastax OpsCenter to the host web browser:
 
-More information on Opscenter is available at:
+    http://localhost:8888
+
+More information on OpsCenter is available at:
 
 [Setting Up Opscenter](http://www.datastax.com/documentation/getting_started/doc/getting_started/gsSetupOpscC.html?scroll=gsSetUpOPSC__step1)
