@@ -28,7 +28,7 @@ curl -L http://debian.datastax.com/debian/repo_key | sudo apt-key add -
 apt-get -y update
 apt-get -y install dsc20
 
-# Cassandra from OpsCenter
+# OpsCenter from Datastax
 echo "Installing OpsCenter..."
 apt-get -y update
 apt-get -y install opscenter
